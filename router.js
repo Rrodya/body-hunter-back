@@ -6,6 +6,8 @@ import UserController from "./Controllers/UserController.js";
 
 const router = new Router();
 
+router.post('/checktoken',  UserController.checkToken);
+
 router.post('/posts', PostController.create);
 router.get('/posts', PostController.getAll);
 router.get('/posts/:id', PostController.getOne);
