@@ -7,6 +7,7 @@ import UserController from "./Controllers/UserController.js";
 const router = new Router();
 
 router.post('/checktoken',  UserController.checkToken);
+router.post('/login', UserController.checkLogin);
 
 router.post('/posts', PostController.create);
 router.get('/posts', PostController.getAll);
